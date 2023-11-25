@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.2 on linux)" generated="20231124 01:07:52.141" rpa="false" schemaversion="4">
+<suite id="s1" name="Criarproduto" source="/home/lucas/Downloads/cardapio-digital/cardapio-digital/tests/criarproduto.robot">
+<test id="s1-t1" name="Abrir o navegador e acessar o site do app" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=http://localhost:5173/</arg>
+<arg>browser=firefox</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231124 01:07:52.302" level="INFO">Opening browser 'firefox' to base url 'http://localhost:5173/'.</msg>
+<status status="PASS" starttime="20231124 01:07:52.301" endtime="20231124 01:07:55.616"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:52.300" endtime="20231124 01:07:55.617"/>
+</test>
+<test id="s1-t2" name="Clicar no botão de Cadastrar novo e abrir modal de criação" line="8">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:cadastrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:55.620" level="INFO">Clicking element 'id:cadastrar'.</msg>
+<status status="PASS" starttime="20231124 01:07:55.619" endtime="20231124 01:07:55.924"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:55.618" endtime="20231124 01:07:55.924"/>
+</test>
+<test id="s1-t3" name="preencher os campos para cadastro." line="11">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:title</arg>
+<arg>manga</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:55.926" level="INFO">Typing text 'manga' into text field 'id:title'.</msg>
+<status status="PASS" starttime="20231124 01:07:55.925" endtime="20231124 01:07:56.028"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:price</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:56.031" level="INFO">Typing text '5' into text field 'id:price'.</msg>
+<status status="PASS" starttime="20231124 01:07:56.030" endtime="20231124 01:07:56.083"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:image</arg>
+<arg>https://www.quitandatomio.com.br/upload/1085343213-beneficios-da-manga-palmer-para-a-saude.jpg</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:56.084" level="INFO">Typing text 'https://www.quitandatomio.com.br/upload/1085343213-beneficios-da-manga-palmer-para-a-saude.jpg' into text field 'id:image'.</msg>
+<status status="PASS" starttime="20231124 01:07:56.083" endtime="20231124 01:07:56.281"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:55.925" endtime="20231124 01:07:56.281"/>
+</test>
+<test id="s1-t4" name="Cadastrar o produto" line="16">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:postar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:56.283" level="INFO">Clicking element 'id:postar'.</msg>
+<status status="PASS" starttime="20231124 01:07:56.282" endtime="20231124 01:07:56.500"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:56.282" endtime="20231124 01:07:56.500"/>
+</test>
+<test id="s1-t5" name="verificar se o produto foi cadastrado" line="19">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>manga</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231124 01:07:56.507" level="INFO">Current page contains text 'manga'.</msg>
+<status status="PASS" starttime="20231124 01:07:56.501" endtime="20231124 01:07:56.507"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:56.501" endtime="20231124 01:07:56.508"/>
+</test>
+<test id="s1-t6" name="Clicar no botão de Cadastrar novo e abrir modal de criação" line="22">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:cadastrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:56.509" level="INFO">Clicking element 'id:cadastrar'.</msg>
+<status status="PASS" starttime="20231124 01:07:56.509" endtime="20231124 01:07:56.726"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:56.508" endtime="20231124 01:07:56.727"/>
+</test>
+<test id="s1-t7" name="preencher os campos para cadastro." line="25">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:title</arg>
+<arg>macarrão</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:56.729" level="INFO">Typing text 'macarrão' into text field 'id:title'.</msg>
+<status status="PASS" starttime="20231124 01:07:56.729" endtime="20231124 01:07:56.769"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:price</arg>
+<arg>25</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:56.770" level="INFO">Typing text '25' into text field 'id:price'.</msg>
+<status status="PASS" starttime="20231124 01:07:56.769" endtime="20231124 01:07:56.811"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:image</arg>
+<arg>https://renata.com.br/images/receitas/87/renata-imagem-receitas-macarrao-ao-molho-rustico-de-tomate-e-bacon-share.jpg</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:56.813" level="INFO">Typing text 'https://renata.com.br/images/receitas/87/renata-imagem-receitas-macarrao-ao-molho-rustico-de-tomate-e-bacon-share.jpg' into text field 'id:image'.</msg>
+<status status="PASS" starttime="20231124 01:07:56.812" endtime="20231124 01:07:57.002"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:56.728" endtime="20231124 01:07:57.002"/>
+</test>
+<test id="s1-t8" name="Cadastrar o produto" line="30">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:postar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:57.004" level="INFO">Clicking element 'id:postar'.</msg>
+<status status="PASS" starttime="20231124 01:07:57.004" endtime="20231124 01:07:57.227"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:57.003" endtime="20231124 01:07:57.228"/>
+</test>
+<test id="s1-t9" name="verificar se o produto foi cadastrado" line="33">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>macarrão</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231124 01:07:57.235" level="INFO">Current page contains text 'macarrão'.</msg>
+<status status="PASS" starttime="20231124 01:07:57.229" endtime="20231124 01:07:57.235"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:57.229" endtime="20231124 01:07:57.235"/>
+</test>
+<test id="s1-t10" name="Clicar no botão de Cadastrar novo e abrir modal de criação" line="37">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:cadastrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:57.237" level="INFO">Clicking element 'id:cadastrar'.</msg>
+<status status="PASS" starttime="20231124 01:07:57.237" endtime="20231124 01:07:57.465"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:57.236" endtime="20231124 01:07:57.465"/>
+</test>
+<test id="s1-t11" name="preencher os campos para cadastro." line="40">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:title</arg>
+<arg>Hamburger</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:57.466" level="INFO">Typing text 'Hamburger' into text field 'id:title'.</msg>
+<status status="PASS" starttime="20231124 01:07:57.466" endtime="20231124 01:07:57.498"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:price</arg>
+<arg>35</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:57.499" level="INFO">Typing text '35' into text field 'id:price'.</msg>
+<status status="PASS" starttime="20231124 01:07:57.498" endtime="20231124 01:07:57.539"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:image</arg>
+<arg>https://supermercadosrondon.com.br/guiadecarnes/images/postagens/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:57.540" level="INFO">Typing text 'https://supermercadosrondon.com.br/guiadecarnes/images/postagens/quer_fazer_hamburger_artesanal_perfeito_2019-05-14.jpg' into text field 'id:image'.</msg>
+<status status="PASS" starttime="20231124 01:07:57.540" endtime="20231124 01:07:57.727"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:57.465" endtime="20231124 01:07:57.727"/>
+</test>
+<test id="s1-t12" name="Cadastrar o produto" line="44">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:postar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 01:07:57.730" level="INFO">Clicking element 'id:postar'.</msg>
+<status status="PASS" starttime="20231124 01:07:57.729" endtime="20231124 01:07:57.954"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:57.728" endtime="20231124 01:07:57.954"/>
+</test>
+<test id="s1-t13" name="verificar se o produto foi cadastrado" line="47">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Hamburger</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231124 01:07:57.962" level="INFO">Current page contains text 'Hamburger'.</msg>
+<status status="PASS" starttime="20231124 01:07:57.955" endtime="20231124 01:07:57.962"/>
+</kw>
+<status status="PASS" starttime="20231124 01:07:57.954" endtime="20231124 01:07:57.962"/>
+</test>
+<status status="PASS" starttime="20231124 01:07:52.142" endtime="20231124 01:07:57.963"/>
+</suite>
+<statistics>
+<total>
+<stat pass="13" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="13" fail="0" skip="0" id="s1" name="Criarproduto">Criarproduto</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231124 01:07:56.508" level="WARN">Multiple tests with name 'Clicar no botão de Cadastrar novo e abrir modal de criação' executed in suite 'Criarproduto'.</msg>
+<msg timestamp="20231124 01:07:56.728" level="WARN">Multiple tests with name 'preencher os campos para cadastro.' executed in suite 'Criarproduto'.</msg>
+<msg timestamp="20231124 01:07:57.003" level="WARN">Multiple tests with name 'Cadastrar o produto' executed in suite 'Criarproduto'.</msg>
+<msg timestamp="20231124 01:07:57.228" level="WARN">Multiple tests with name 'verificar se o produto foi cadastrado' executed in suite 'Criarproduto'.</msg>
+<msg timestamp="20231124 01:07:57.236" level="WARN">Multiple tests with name 'Clicar no botão de Cadastrar novo e abrir modal de criação' executed in suite 'Criarproduto'.</msg>
+<msg timestamp="20231124 01:07:57.465" level="WARN">Multiple tests with name 'preencher os campos para cadastro.' executed in suite 'Criarproduto'.</msg>
+<msg timestamp="20231124 01:07:57.728" level="WARN">Multiple tests with name 'Cadastrar o produto' executed in suite 'Criarproduto'.</msg>
+<msg timestamp="20231124 01:07:57.954" level="WARN">Multiple tests with name 'verificar se o produto foi cadastrado' executed in suite 'Criarproduto'.</msg>
+</errors>
+</robot>
